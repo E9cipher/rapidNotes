@@ -130,6 +130,7 @@ function showEditModal(id, currentText) {
     });
     loadNotes();
   };
+  cancelBtn.onclick = () => {modal.style.display='none'}
 }
 
 /* GOING NOW TO MINOR JS (LINKS, TOGGLES) */
