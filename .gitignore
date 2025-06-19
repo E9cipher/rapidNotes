@@ -1,0 +1,3 @@
+# Ignore tmp/ files
+tmp/result.json
+tmp/note.txt
