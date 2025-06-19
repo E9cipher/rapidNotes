@@ -5,4 +5,4 @@ This is an online notebook made for daily notes storing. It uses `JSON` to store
 ## Thanks
 For this project to be possible, I used [falconmasters/darkmode-con-javascript](https://github.com/falconmasters/darkmode-con-javascript/) as a template and I modified it to fulfill my needings. Also I used [sweetalert2](https://github.com/sweetalert2/sweetalert2) for the popups and messages.
 ## LICENSE
-This project has a (MIT License)[LICENSE]
+This project has a [MIT License](LICENSE)
