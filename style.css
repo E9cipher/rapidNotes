@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F1;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background-color: #111111;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+nav {
+  background-color: #FEFEFE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+body.dark nav {
+  background-color: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+body.dark nav a {
+  color: #C8C8C8;
+}
+body.dark nav a:hover {
+  color: #FEFEFE;
+}
+nav .logotipo {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+nav .enlaces {
+  display: flex;
+  align-items: center;
+}
+nav .enlaces a {
+  margin-right: 40px;
+}
+nav .enlaces a:hover {
+  color: #707070;
+}
+
+.switch {
+  background-color: #343D5B;
+  border-radius: 10000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background-color: none;
+  color: #fff;
+}
+
+.title {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 15px;
+  /*body.dark & {
+      background-color: #222222;
+  }*/
+}
+.title form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 80% 20%;
+  padding: 0 5px;
+}
+.title form input {
+  background-color: #fff;
+  box-shadow: 2px 1px rgba(189, 189, 189, 0.16);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease all;
+  width: 100%;
+  position: relative;
+}
+body.dark .title form input {
+  background-color: #222222;
+  color: white;
+}
+.title form input:focus {
+  border-color: #254BE6;
+}
+.title form button {
+  position: relative;
+  background-color: #3E60E9;
+  color: white;
+  box-shadow: 2px 1px rgba(169, 169, 169, 0.16);
+  border: 2px solid transparent;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.title form button:hover {
+  background-color: #254BE6;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+}
+.grid .card {
+  background-color: #FEFEFE;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  position: relative;
+  min-height: 195px;
+  margin-top: 50px;
+  transition: 0.3s ease all;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.dark .grid .card {
+  background-color: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+.grid .card p {
+  top: 0;
+  position: relative;
+  color: #222222;
+}
+body.dark .grid .card p {
+  color: #C8C8C8;
+}
+.grid .card .littletxt {
+  flex-shrink: 0;
+  margin-top: auto;
+  color: black;
+}
+.grid .card .littletxt .tstmp {
+  font-size: 13px;
+  border: 0;
+  border-radius: 3px;
+}
+.grid .card .littletxt .analys {
+  font-size: 13px;
+  border: 0;
+  border-radius: 3px;
+}
+body.dark .grid .card .littletxt {
+  color: #C8C8C8;
+}
+.grid .card .btns {
+  width: 100%;
+  margin-top: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-self: flex-end;
+}
+.grid .card .btns .btn {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+}
+.grid .card .btns .btn.edit-btn {
+  background-color: #3E60E9;
+}
+.grid .card .btns .btn.edit-btn:hover {
+  background-color: #254BE6;
+}
+.grid .card .btns .btn.delete-btn {
+  background-color: #C8C8C8;
+}
+.grid .card .btns .btn.delete-btn:hover {
+  background-color: #ACABAB;
+}
+
+#editModal {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+#editModal h3 {
+  font-family: "Bree Serif", serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#editModal textarea {
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  resize: none;
+}
+#editModal textarea:focus {
+  border-color: #254BE6;
+}
+#editModal .modal-btns {
+  display: flex;
+  gap: 10px;
+}
+#editModal .modal-btns button {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+#editModal .modal-btns button.modal-save {
+  background-color: #3E60E9;
+}
+#editModal .modal-btns button.modal-save:hover {
+  background-color: #254BE6;
+}
+#editModal .modal-btns button.modal-cancel {
+  background-color: #C8C8C8;
+}
+#editModal .modal-btns button.modal-cancel:hover {
+  background-color: #ACABAB;
+}
+
+/*
+logo hover
+transform: scale(1.05);
+                    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+                    logo normal
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+*//*# sourceMappingURL=style.css.map */

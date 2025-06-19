@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RapidNotes</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif:regular" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/822c48f9f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <script src="darkmode.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a class="logotipo" href="#">RapidNotes</a>
+            <div class="enlaces">
+                <a href="#" id="lk_home">Home</a>
+                <a href="#" id="lk_notes">Notes</a>
+                <a href="#" id="lk_help">Help</a>
+                <button class="switch" id="switch">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+            </div>
+        </nav>
+        <div class="title">
+            <form id="noteForm">
+                <input type="text" id="noteInput" placeholder="Write a note..." required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        <section class="grid" id="notesContainer">
+            <div class="card">
+                <div class="text">
+                    <!-- Here would go the <p> with text -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sit soluta quas consequatur
+                        harum, nisi eos voluptatem possimus nostrum, non laudantium cum natus blanditiis amet dicta at
+                        ut voluptas esse!</p>
+                </div>
+                <div class="littletxt">
+                    <small class="tstmp">6/17/2025, 6:04:47 PM</small><br/> <!-- Timestamp -->
+                    <small class="analys">Words: 8 | Longest: "shortest"</small> <!-- Analysis with CPP -->
+                </div>
+                <div class="btns">
+                    <a href="#" class="btn edit-btn">Edit</a>
+                    <a href="#" class="btn delete-btn">Remove</a>
+                </div>
+            </div>
+            <!--<div class="card">
+                <div class="btns">
+                    <a href="#" class="btn edit-btn">Edit</a>
+                    <a href="#" class="btn delete-btn">Remove</a>
+                </div>
+            </div>-->
+        </section>
+    </div>
+    <div id="editModal">
+        <h3>Edit Note</h3>
+        <textarea id="editTextarea" rows="6" cols="40"></textarea><br><br>
+        <div class="modal-btns">
+            <button id="saveEditBtn" class="modal-save">Save</button>
+            <button id="cancelBtn" class="modal-cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

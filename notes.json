@@ -1,0 +1,38 @@
+[
+    {
+        "id": "68544809993d0",
+        "text": "This is a test note",
+        "timestamp": 1750353929,
+        "analysis": {
+            "word_count": 5,
+            "longest_word": "This"
+        }
+    },
+    {
+        "id": "68544811333cd",
+        "text": "Try editing this note...",
+        "timestamp": 1750353937,
+        "analysis": {
+            "word_count": 4,
+            "longest_word": "editing"
+        }
+    },
+    {
+        "id": "685448174a278",
+        "text": "And why not removing this?",
+        "timestamp": 1750353943,
+        "analysis": {
+            "word_count": 5,
+            "longest_word": "removing"
+        }
+    },
+    {
+        "id": "68544829c56c5",
+        "text": "And this is the last one",
+        "timestamp": 1750353961,
+        "analysis": {
+            "word_count": 6,
+            "longest_word": "this"
+        }
+    }
+]
