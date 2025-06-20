@@ -2,3 +2,6 @@
 tmp/result.json
 tmp/note.txt
 tmp/*
+# Ignore .css and .css.map files, I update only the .scss file
+style.css
+style.css.map
