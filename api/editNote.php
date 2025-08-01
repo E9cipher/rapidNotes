@@ -1,4 +1,7 @@
 <?php
+$NO_HOMEBTN = true;
+ob_clean();
+header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"), true);
 $id = $data['id'];
 $newText = $data['text'];

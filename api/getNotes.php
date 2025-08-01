@@ -1,4 +1,6 @@
 <?php
+$NO_HOMEBTN = true;
+ob_clean();
 header('Content-Type: application/json');
 
 $notesFile = '../notes.json';

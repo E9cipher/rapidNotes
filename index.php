@@ -1,3 +1,4 @@
+<?php $NO_HOMEBTN = true ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,3 +72,7 @@
     </div>
 </body>
 </html>
+
+
+
+<?php if (empty($NO_HOMEBTN)) include "/var/www/html/homebtn.php"; ?>
